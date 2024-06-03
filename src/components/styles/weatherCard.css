@@ -1,0 +1,88 @@
+.font_img {
+  object-fit: initial;
+  width: 100vw;
+  height: 1000px;
+}
+
+.weathercard {
+  position: fixed;
+  width: 40%;
+  min-height: 65vh;
+  margin-bottom: 25vh;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ccca;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.weathercard_title {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  font-weight: 1000;
+  font-size: 3vw;
+}
+
+.weathercard_city {
+  text-transform: capitalize;
+  font-size: 2vw;
+}
+
+.weathercard_description {
+  text-transform: capitalize;
+  font-weight: 1000;
+  margin-bottom: 1rem;
+}
+
+.weathercard_body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.weathercard_data {
+  display: flex;
+  flex-direction: column;
+  gap: 0 50px;
+  align-items: center;
+}
+
+.weathercard_list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.weathercard_item {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-auto-flow: column;
+}
+
+.weathercard_item span:first-child {
+  text-transform: capitalize;
+}
+.weathercard_item span:last-child {
+  font-weight: 900;
+}
+
+.weathercard_temp {
+  margin: 15px 0;
+}
+
+.weathercard_btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  transition: transform 0.25s, box-shadow 0.5s;
+}
+
+.weathercard_btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px;
+  transition: transform 0.25s, box-shadow 0.5s;
+}

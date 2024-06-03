@@ -1,0 +1,49 @@
+:root {
+  --backImage: url(`../public/01n.gif `);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset */
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100vh;
+  /* object-fit: contain; */
+}
+
+input,
+button {
+  display: inline-block;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+}
+
+/* App */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading > img {
+  background-color: #ccca;
+  border: none;
+  border-radius: 150px 150px;
+  opacity: 0.5;
+}
