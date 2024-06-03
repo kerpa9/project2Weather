@@ -13,7 +13,7 @@ const WeatherCard = ({ weather, temp }) => {
     <>
       <img
         className="font_img"
-        src={`../public/${weather?.weather[0].icon}.gif `}
+        src={`../public/assets/${weather?.weather[0].icon}.gif `}
         alt="font_img"
       />
       <div className="weathercard">
