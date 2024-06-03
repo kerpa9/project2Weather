@@ -1,5 +1,5 @@
 :root {
-  --backImage: url(`../public/01n.gif `);
+  --backImage: url(`../public/${weather?.weather[0].icon}.gif `);
 }
 
 *,
